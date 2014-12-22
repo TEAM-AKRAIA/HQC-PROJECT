@@ -1,0 +1,5 @@
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\bin\Debug\BullsCows.exe
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\bin\Debug\BullsCows.pdb
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsAndCowsGame.csprojResolveAssemblyReference.cache
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.exe
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.pdb

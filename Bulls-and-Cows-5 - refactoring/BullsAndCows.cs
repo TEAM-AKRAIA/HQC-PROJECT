@@ -5,8 +5,6 @@ using System.Text.RegularExpressions;
 
 namespace BullsAndCowsGame
 {
-    //tova mie purvata Csharp programa v jivota
-    // obache dobre stana .i ba4ka na 100%
     class BullsAndCows
     {
         static int number, attempts;

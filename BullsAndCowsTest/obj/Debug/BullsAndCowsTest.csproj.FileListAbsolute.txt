@@ -1,0 +1,1 @@
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.csprojResolveAssemblyReference.cache
