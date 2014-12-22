@@ -181,15 +181,16 @@ namespace BullsAndCowsGame
 
             var game = new BullsAndCowsCore();
             game.Run();
-            var scboard = new Scoreboard();
-            scboard.addNewPlayer("sdfs", 3);
-            scboard.addNewPlayer("sdfs", 4);
-            scboard.addNewPlayer("sdfs", 56);
-            scboard.addNewPlayer("sdfs", 2);
-            scboard.addNewPlayer("sdfs", 5);
-            Console.WriteLine(scboard.ToString());
-            scboard.addNewPlayer("eeeeee", 1);
-            Console.WriteLine(scboard.ToString());
+            //var scboard = new Scoreboard();
+            //scboard.addNewPlayer("sdfs", 3);
+            //scboard.addNewPlayer("sdfs", 4);
+            //scboard.addNewPlayer("sdfs", 56);
+            //scboard.addNewPlayer("sdfs", 2);
+            //scboard.addNewPlayer("sdfs", 5);
+            //Console.WriteLine(scboard.ToString());
+            //scboard.addNewPlayer("eeeeee", 1);
+            //Console.WriteLine(scboard.ToString());
+            //Console.WriteLine(scboard.ToString());
         }
     }
 }

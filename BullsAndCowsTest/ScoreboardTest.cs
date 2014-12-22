@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BullsAndCowsGame;
 
 namespace BullsAndCowsTest
 {
@@ -14,7 +15,8 @@ namespace BullsAndCowsTest
 2. sdfs --> 2 guesses
 3. sdfs --> 3 guesses
 4. sdfs --> 4 guesses
-5. sdfs --> 5 guesses";
+5. sdfs --> 5 guesses
+";
             var scboard = new Scoreboard();
             scboard.addNewPlayer("sdfs", 3);
             scboard.addNewPlayer("sdfs", 4);

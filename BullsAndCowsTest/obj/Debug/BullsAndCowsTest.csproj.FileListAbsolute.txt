@@ -1,1 +1,7 @@
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.csprojResolveAssemblyReference.cache
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsAndCowsTest.dll
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsAndCowsTest.pdb
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsCows.exe
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsCows.pdb
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.dll
+C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.pdb
