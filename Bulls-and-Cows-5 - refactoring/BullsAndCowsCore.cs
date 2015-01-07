@@ -197,13 +197,15 @@ namespace BullsAndCowsGame
             this.PrintMessage(message);
         }
 
-        private void PrintCallMsg()
+        //tested
+        public void PrintCallMsg()
         {
             var message = Messages.GetCallMsg();
             this.PrintMessage(message);
         }
 
-        private void PrintWrongNumberMsg()
+        //tested
+        public void PrintWrongNumberMsg()
         {
             var message = Messages.GetWrongNumberMsg();
             this.PrintMessage(message);
@@ -215,8 +217,8 @@ namespace BullsAndCowsGame
             this.PrintMessage(message);
         }
 
-
-        private void PrintFinalMsg()
+        //tested - trying
+        public void PrintFinalMsg()
         {
             var message = Messages.GetGreetingMsg(this.attempts, this.cheats);
 
