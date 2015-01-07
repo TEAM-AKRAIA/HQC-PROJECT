@@ -1,8 +1,8 @@
 ﻿namespace BullsAndCowsGame
 {
-    class BullsAndCows
+    public class BullsAndCows
     {
-        static void Main()
+        public static void Main()
         {
             var game = new BullsAndCowsCore();
             game.Run();
