@@ -35,7 +35,7 @@ namespace BullsAndCowsTest
             Assert.AreEqual(message, result);
         }
 
-                [TestMethod]
+        [TestMethod]
         public void TestGetGreetingMsgWhenCheating()
         {
             int attempts = 5;

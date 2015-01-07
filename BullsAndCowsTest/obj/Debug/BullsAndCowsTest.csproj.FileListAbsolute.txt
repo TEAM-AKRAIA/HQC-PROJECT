@@ -5,3 +5,10 @@ C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsCo
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\bin\Debug\BullsCows.pdb
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.dll
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\bin\Debug\BullsAndCowsTest.dll
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\bin\Debug\BullsAndCowsTest.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\bin\Debug\BullsCows.exe
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\bin\Debug\BullsCows.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.csprojResolveAssemblyReference.cache
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.dll
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\BullsAndCowsTest\obj\Debug\BullsAndCowsTest.pdb

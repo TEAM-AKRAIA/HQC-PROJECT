@@ -3,3 +3,8 @@ C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\bin
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsAndCowsGame.csprojResolveAssemblyReference.cache
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.exe
 C:\Users\Valeri\Desktop\HQC-PROJECT.git\trunk\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.exe
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsCows.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\Bulls-and-Cows-5 - refactoring\bin\Debug\BullsCows.exe
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\Bulls-and-Cows-5 - refactoring\bin\Debug\BullsCows.pdb
+D:\SoftUni\High-Quality-Code\Teamwork\HQC-PROJECT\Bulls-and-Cows-5 - refactoring\obj\x86\Debug\BullsAndCowsGame.csprojResolveAssemblyReference.cache

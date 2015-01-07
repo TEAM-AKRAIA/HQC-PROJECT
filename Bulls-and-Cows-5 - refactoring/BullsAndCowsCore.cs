@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace BullsAndCowsGame
 {
-    class BullsAndCowsCore
+    public class BullsAndCowsCore
     {
         private Random randomGenerator = new Random();
         private string computerNumber;
@@ -13,10 +13,6 @@ namespace BullsAndCowsGame
         private string joker;
         private int bulls;
         private int cows;
-
-        public BullsAndCowsCore()
-        {
-        }
 
         private void CreateComputerNumber()
         {
@@ -166,12 +162,14 @@ namespace BullsAndCowsGame
             }
         }
 
+
         private void PrintMessage(string message)
         {
             Console.Write(message);
         }
 
-        private void PrintStartMsg()
+        //tested
+        public void PrintStartMsg()
         {
             var message = Messages.GetWelcomeMsg();
             this.PrintMessage(message);
@@ -185,13 +183,15 @@ namespace BullsAndCowsGame
             this.PrintMessage(message);
         }
 
-        private void PrintEndMsg()
+        //tested
+        public void PrintEndMsg()
         {
             var message = Messages.GetGoodByeMsg();
             this.PrintMessage(message);
         }
 
-        private void PrintCountOfBullsAndCowsMsg()
+        
+        public void PrintCountOfBullsAndCowsMsg()
         {
             var message = Messages.GetResultMsg(this.bulls, this.cows);
             this.PrintMessage(message);
