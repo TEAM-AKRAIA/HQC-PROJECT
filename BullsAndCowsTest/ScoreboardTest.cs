@@ -10,13 +10,12 @@ namespace BullsAndCowsTest
         [TestMethod]
         public void TestScoreboardAddAndDisplayPlayers()
         {
-            string result = @"Scoreboard:
-1. eeeeee --> 1 guesses
-2. sdfs --> 2 guesses
-3. sdfs --> 3 guesses
-4. sdfs --> 4 guesses
-5. sdfs --> 5 guesses
-";
+            string result = "Scoreboard:\n" +
+                    "1. eeeeee --> 1 guesses\n" +
+                     "2. sdfs --> 2 guesses\n" +
+                     "3. sdfs --> 3 guesses\n" +
+                     "4. sdfs --> 4 guesses\n" +
+                     "5. sdfs --> 5 guesses\n";
             var scboard = new Scoreboard();
             scboard.addNewPlayer("sdfs", 3);
             scboard.addNewPlayer("sdfs", 4);

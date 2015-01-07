@@ -5,7 +5,7 @@
         public static void Main()
         {
             var game = new BullsAndCowsCore();
-            game.Run();
+            game.Run(null);
         }
     }
 }

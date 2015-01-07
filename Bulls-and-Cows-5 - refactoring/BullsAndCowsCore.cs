@@ -6,19 +6,35 @@ namespace BullsAndCowsGame
     public class BullsAndCowsCore
     {
         private Random randomGenerator = new Random();
-        private string computerNumber;
         private Scoreboard scoreboard = new Scoreboard();
-        private int attempts;
-        private int cheats;
-        private string joker;
-        private int bulls;
-        private int cows;
+
+        private Random RandomGenerator
+        {
+            get { return this.randomGenerator; }
+        }
+
+        public string ComputerNumber { private get; set; }
+
+        private Scoreboard Scoreboard
+        {
+            get { return this.scoreboard; }
+        }
+
+        private int Attempts { get; set; }
+
+        private int Cheats { get; set; }
+
+        private string Joker { get; set; }
+
+        private int Bulls { get; set; }
+
+        private int Cows { get; set; }
 
         private void CreateComputerNumber()
         {
             const int MinNumber = 1000;
             const int MaxNumber = 10000;
-            this.computerNumber = randomGenerator.Next(MinNumber, MaxNumber).ToString();
+            this.ComputerNumber = randomGenerator.Next(MinNumber, MaxNumber).ToString();
         }
 
         private string ReadPlayerInput()
@@ -27,16 +43,24 @@ namespace BullsAndCowsGame
             return input;
         }
 
-        public void Run()
+        public void Run(string testNumber)
         {
             this.PrintStartMsg();
 
             bool isBreaked = false;
             while (!isBreaked)
             {
-                CreateComputerNumber();
-                this.attempts = 1;
-                this.joker = "XXXX";
+                if (string.IsNullOrEmpty(testNumber))
+                {
+                    CreateComputerNumber();
+                }
+                else
+                {
+                    ComputerNumber = testNumber;
+                }
+
+                this.Attempts = 1;
+                this.Joker = "XXXX";
 
                 bool isRestarted = false;
                 while (!isBreaked && !isRestarted)
@@ -51,7 +75,7 @@ namespace BullsAndCowsGame
                             break;
                         case "help":
                             this.PrintJoker();
-                            this.cheats++;
+                            this.Cheats++;
                             break;
                         case "restart":
                             this.PrintMessage("\n");
@@ -67,7 +91,7 @@ namespace BullsAndCowsGame
                             {
                                 CheckForValidNumber(command);
                                 CountBullsAndCows(command);
-                                if (this.bulls == 4)
+                                if (this.Bulls == 4)
                                 {
                                     this.PrintFinalMsg();
                                     this.PrintMessage("\n");
@@ -79,7 +103,7 @@ namespace BullsAndCowsGame
                                     this.PrintCountOfBullsAndCowsMsg();
                                 }
 
-                                this.attempts++;
+                                this.Attempts++;
                             }
                             catch (Exception)
                             {
@@ -94,32 +118,32 @@ namespace BullsAndCowsGame
 
         private void MakeNewJoker()
         {
-            if (this.joker.IndexOf('X') >= 0)
+            if (this.Joker.IndexOf('X') >= 0)
             {
                 int i;
                 do
                 {
                     i = this.randomGenerator.Next(0, 4);
                 }
-                while (this.joker[i] != 'X');
+                while (this.Joker[i] != 'X');
 
-                char[] digits = this.joker.ToCharArray();
-                digits[i] = computerNumber[i];
-                this.joker = new string(digits);
+                char[] digits = this.Joker.ToCharArray();
+                digits[i] = ComputerNumber[i];
+                this.Joker = new string(digits);
             }
         }
 
         private void CountBullsAndCows(string guessNumber)
         {
             bool[] isBull = new bool[4];
-            this.bulls = 0;
-            this.cows = 0;
+            this.Bulls = 0;
+            this.Cows = 0;
             for (int i = 0; i < 4; i++)
             {
-                isBull[i] = (this.computerNumber[i] == guessNumber[i]);
+                isBull[i] = (this.ComputerNumber[i] == guessNumber[i]);
                 if (isBull[i])
                 {
-                    this.bulls++;
+                    this.Bulls++;
                 }
             }
 
@@ -135,7 +159,7 @@ namespace BullsAndCowsGame
             {
                 if (!isBull[i])
                 {
-                    digs[this.computerNumber[i] - '0']++;
+                    digs[this.ComputerNumber[i] - '0']++;
                 }
             }
 
@@ -145,7 +169,7 @@ namespace BullsAndCowsGame
                 {
                     if (digs[guessNumber[i] - '0'] > 0)
                     {
-                        this.cows++;
+                        this.Cows++;
                         digs[guessNumber[i] - '0']--;
                     }
                 }
@@ -179,7 +203,7 @@ namespace BullsAndCowsGame
         private void PrintJoker()
         {
             this.MakeNewJoker();
-            var message = Messages.GetHelpMsg(this.joker);
+            var message = Messages.GetHelpMsg(this.Joker);
             this.PrintMessage(message);
         }
 
@@ -190,10 +214,10 @@ namespace BullsAndCowsGame
             this.PrintMessage(message);
         }
 
-        
-        public void PrintCountOfBullsAndCowsMsg()
+
+        private void PrintCountOfBullsAndCowsMsg()
         {
-            var message = Messages.GetResultMsg(this.bulls, this.cows);
+            var message = Messages.GetResultMsg(this.Bulls, this.Cows);
             this.PrintMessage(message);
         }
 
@@ -217,16 +241,16 @@ namespace BullsAndCowsGame
             this.PrintMessage(message);
         }
 
-        //tested - trying
-        public void PrintFinalMsg()
-        {
-            var message = Messages.GetGreetingMsg(this.attempts, this.cheats);
 
-            if (this.cheats == 0)
+        private void PrintFinalMsg()
+        {
+            var message = Messages.GetGreetingMsg(this.Attempts, this.Cheats);
+
+            if (this.Cheats == 0)
             {
                 this.PrintMessage(message);
                 var name = this.ReadPlayerInput();
-                scoreboard.addNewPlayer(name, attempts);
+                scoreboard.addNewPlayer(name, Attempts);
                 this.PrintScoreboard();
             }
             else
